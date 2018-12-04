@@ -6,7 +6,8 @@ void setup() {
   // set baud rate then delay to give user time to open serial monitor
   Serial.begin(9600);
   delay(5000);
-  //Send command to set name of HC06 module, with the below command name will change to "forcetronics"
+  //Send command to set name of HC06 module, 
+  //with the below command name will change to "forcetronics"
   Serial.print("AT+NAMEForceT");
   delay(600); //HC06 requires 500 msec for reply
   int8_t count = 0; //declare and intialize count 
